@@ -1,0 +1,18 @@
+<div class="text-form">
+<%=form_for(@article ,url:{controller:'articles',action:'create'}) do |form|%>
+  <div class="title">
+   <%= form.label "タイトル" %>
+   <%= form.text_field :title %>
+  </div>
+  <div class="text">
+   <%= form.label "本文" %>
+   <%= form.text_field :text %>
+  </div>
+  <div class="btn waves-effect waves-light" >
+   <%= form.submit "投稿" %>
+  </div>
+<%end%>
+</div>
+
+
+

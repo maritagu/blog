@@ -1,0 +1,5 @@
+ <div class="row">
+       <% @articles.each do |article| %>
+       <%= render partial: "article", locals: { article: article } %>
+       <%end%>
+</div>
